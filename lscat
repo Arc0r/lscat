@@ -1,0 +1,6 @@
+#!/bin/bash
+if [[ -f "$1" ]];then
+	cat $1
+else
+	exa -lgh --icons --git $1
+fi
